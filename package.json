@@ -1,0 +1,26 @@
+{
+  "name": "margaritamaia",
+  "version": "1.0.0",
+  "description": "Sexto Desafio",
+  "main": "productManager.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Verushka Fernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "connect-mongo": "^5.1.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.2.0",
+    "mongoose-paginate-v2": "^1.8.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.3",
+    "socket.io": "^4.7.4"
+  }
+}

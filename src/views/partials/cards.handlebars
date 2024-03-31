@@ -1,0 +1,24 @@
+<div style="display: flex; flex-wrap: wrap; justify-content: center; width: 100%" id="list">
+    {{#each products}}
+    {{#if status}}
+    <div class="card" style="margin: 10px 50px; max-width: 200px">
+        {{#isEmptyArray thumbnail}}
+        <img src="https://i.ibb.co/zsQdBNc/200x200.gif" alt="img - no img">
+        {{else}}
+        <img src={{thumbnail}} width="200px" alt="img - {{thumbnail}}">
+        {{/isEmptyArray}}
+        <div class="card-body">
+            <p class="card-title">{{category}} - {{title}}</p>
+        </div>
+        <div class="p-3" style="display: flex; justify-content: space-between;">
+            <a href="/products/{{id}}" class="btn btn-primary">Info</a>
+            <div class="delete">
+                <button class="btn btn-primary delete" id={{id}}>
+                    Delete
+                </button>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    {{/each}}
+</div>
